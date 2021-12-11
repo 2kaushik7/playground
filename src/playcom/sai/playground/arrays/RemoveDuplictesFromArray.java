@@ -4,6 +4,14 @@ import java.util.Arrays;
 
 public class RemoveDuplictesFromArray {
 
+	// Array is a static data structure. We are modify the size once it is created.
+	// Create a new array of same size and copy them after comparison
+	// Take the first value into a variable for comparison
+	// Iterate the array the compare if the previous value and current value are
+	// same
+	// If they are same do not copy into the new array
+	// if they are same copy into new array
+	// then copy the current element into the variable using for comparison
 	public static int[] removeDuplicatesFromArrayWithoutUsingCollections(int[] numbers) {
 		int[] result = new int[numbers.length];
 		int previous = numbers[0];

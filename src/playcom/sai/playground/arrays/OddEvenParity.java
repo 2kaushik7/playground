@@ -2,6 +2,12 @@ package playcom.sai.playground.arrays;
 
 public class OddEvenParity {
 
+	// Check if the first integer in the array is odd or even assign the parity
+	// Then iterate the array from second number i.e num[1] and check the next
+	// number is not equal to parity
+	// If it is not equal assign the parity
+	// It is same return the value when OddEvenParity is missing
+	// If all elements maintain the alternate parity send -1
 	public static int checkOddEven(int[] num) {
 		int parity = num[0] % 2 == 1 ? 1 : 0;
 		for (int i = 1; i < num.length; i++) {
